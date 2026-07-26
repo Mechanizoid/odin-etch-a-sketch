@@ -30,6 +30,11 @@ newCanvasBtn.addEventListener('click', () => {
 
   do {
     const input = prompt('How many squares per side? (Max 100)', 16);
+
+    if (input === null) {
+      return;
+    }
+
     squaresPerSide = Number(input);
   } while (isNaN(squaresPerSide) || squaresPerSide > 100);
 
