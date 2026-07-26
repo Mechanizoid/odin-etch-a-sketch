@@ -18,6 +18,8 @@ body {
 .container {
     background-color: black;
     border: 2px solid green;
+    max-width: 960px;
+    margin: 0 auto; /* centers the container horizontally */
     padding: var(--grid-gap);
     display: flex;
     flex-wrap: wrap;
