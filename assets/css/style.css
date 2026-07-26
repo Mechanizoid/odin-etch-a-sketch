@@ -9,10 +9,40 @@ body {
     background-color: black;
 }
 
+.ui-container {
+    display: flex;
+    justify-content: center;
+
+    /* margins */
+    margin: 10px;
+}
+
 #main-header {
     color: green;
     background-color: black;
     text-align: center;
+}
+
+.ui-button {
+    /* reset default browser styles */
+    background: none;
+    border: 2px solid green;
+    font-family: inherit;
+
+    /* Core layout and sizing */
+    display: inline-block;
+    padding: 12px 24px;
+    cursor: pointer;
+
+    /* Visual styling */
+    background-color: black;
+    color: green;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 999px;
+
+    /* smooth animation */
+    transition: background-color 0.3s ease;
 }
 
 .container {
