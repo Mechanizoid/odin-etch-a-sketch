@@ -14,12 +14,25 @@ function createGrid(parent, squaresPerSide = 16, gap = '2px') {
   }
 }
 
-
 // initialize canvas
 const canvas = document.querySelector(".container");
+const userControls = document.querySelector('.ui-container');
+const newCanvasBtn = document.querySelector('#reset-canvas-btn');
 
 createGrid(canvas, 16, '0px');
 
 canvas.addEventListener('mouseover', (e) => {
   e.target.style.backgroundColor = 'green';
+});
+
+newCanvasBtn.addEventListener('click', () => {
+  let squaresPerSide = undefined;
+
+  do {
+    const input = prompt('How many squares per side? (Max 100)', 16);
+    squaresPerSide = Number(input);
+  } while (isNaN(squaresPerSide) || squaresPerSide > 100);
+
+  canvas.replaceChildren();
+  createGrid(canvas, squaresPerSide, '0px');
 });
