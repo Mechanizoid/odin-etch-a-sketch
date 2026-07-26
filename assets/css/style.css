@@ -25,7 +25,7 @@ body {
 }
 
 .square {
-    background-color: darkgreen;
+    background-color: black;
     /* Calculate the width for 16 columns */
     flex: 0 0 calc((100% - ((var(--grid-width) - 1)  * var(--grid-gap))) / var(--grid-width));
     /* force the item to remain a perfect square */

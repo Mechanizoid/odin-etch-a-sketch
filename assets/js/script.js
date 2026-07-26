@@ -1,4 +1,4 @@
-console.log('hello, world!');
+// script.js
 
 function createGrid(parent, squaresPerSide = 16, gap = '2px') {
   const numDivs = squaresPerSide ** 2;
@@ -15,8 +15,11 @@ function createGrid(parent, squaresPerSide = 16, gap = '2px') {
 }
 
 
-// create divs that CSS styles will arrange into a grid
+// initialize canvas
+const canvas = document.querySelector(".container");
 
-const container = document.querySelector(".container");
+createGrid(canvas, 16, '0px');
 
-createGrid(container, 12, '8px');
+canvas.addEventListener('mouseover', (e) => {
+  e.target.style.backgroundColor = 'green';
+});
