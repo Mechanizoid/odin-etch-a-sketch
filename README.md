@@ -1,10 +1,10 @@
-# Etch A Sketch
+# Etch-a-Sketch
 
-My implementation of the Etch A Sketch project from [The Odin Project](https://www.theodinproject.com). This is the final [project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) of the Foundations course.
+My implementation of the Etch-a-Sketch project from [The Odin Project](https://www.theodinproject.com). This is the final [project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) of the Foundations course.
 
 ## Description
 
-This is a browser version of something like an Etch-A-Sketch. The webpage contains a grid of squares which change color once a user mouses over them, leaving pixelated trails much like a real Etch-A-Sketch.
+This is a browser version of something like an Etch-a-Sketch. The webpage contains a grid of squares which change color once a user mouses over them, leaving pixelated trails much like a real Etch-a-Sketch.
 
 ## Getting Started
 
@@ -19,9 +19,8 @@ Copy the files to the document root of your web server. If you wish to run this 
 ## Authors
 
 ### Christopher Phoenix
-Hi! I write free software. Here's how you can reach me:
-* **Email:** hello@chrisphoenix.dev
+Hi! I write free software. 
 
 ## License
 
-This project is licensed under the [GNU Affero GPL License](https://www.gnu.org/licenses/agpl-3.0.html) - see the LICESE file for details.
+This project is licensed under the [GNU Affero GPL License](https://www.gnu.org/licenses/agpl-3.0.html) - see the LICENSE file for details.
