@@ -1,6 +1,33 @@
 /* style.css */
 
+:root {
+    --grid-width: 16;
+    --grid-gap: 2px;
+}
+
+body {
+    background-color: black;
+}
+
 #main-header {
     color: green;
     background-color: black;
+    text-align: center;
+}
+
+.container {
+    background-color: black;
+    border: 2px solid green;
+    padding: var(--grid-gap);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--grid-gap);
+}
+
+.square {
+    background-color: darkgreen;
+    /* Calculate the width for 16 columns */
+    flex: 0 0 calc((100% - ((var(--grid-width) - 1)  * var(--grid-gap))) / var(--grid-width));
+    /* force the item to remain a perfect square */
+    aspect-ratio: 1 / 1;
 }
